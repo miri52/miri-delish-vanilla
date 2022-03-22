@@ -15,7 +15,14 @@ h1 {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 1em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
 }
 
 h3 {
@@ -217,38 +224,68 @@ footer {
 .container-flex-about {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
   margin: 3em 1em;
   padding: 0 2em;
 }
 
+.about-title {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 3rem;
+}
+
+.about-secondary-title {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 2rem;
+}
+
 .about-img {
   max-width: 100%;
   height: 500px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-/* .container-flex-main {
-  flex-direction: row;
-} */
-@media (min-width: 750px) {
+figcaption {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+@media (min-width: 850px) {
   .container-flex-about {
     flex-direction: row;
+    justify-content: space-between;
+    margin: 4em;
+    gap: 3em;
+  }
+  .about-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 50%;
   }
 
   .about-img {
-    margin-right: 1em;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
+  }
+
+  .about-col-main {
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 5rem;
+    margin-top: auto;
   }
 
   .about-main {
     max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.3rem;
-    text-align: left;
+    font-size: 1.2rem;
   }
 }
