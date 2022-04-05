@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-size: 1rem;
@@ -6,6 +10,7 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  line-height: 1.5;
   /* height: 100vh; */
   /* overflow: hidden; */
 }
@@ -221,6 +226,15 @@ footer {
 
 /* About page */
 
+.container-about {
+  font-family: "Hind Vadodara", sans-serif;
+}
+
+.about-banner-even {
+  background: #fcf8f6;
+  /* background: #fcfaf6; */
+}
+
 .container-flex-about {
   display: flex;
   flex-direction: column;
@@ -228,18 +242,16 @@ footer {
   padding: 3em;
 }
 
-.container-flex-about-even {
-  background: #eaede8;
-}
-
 .about-title {
   font-family: "Reenie Beanie", cursive;
   font-size: 3rem;
+  align-self: flex-start;
 }
 
 .about-secondary-title {
   font-family: "Reenie Beanie", cursive;
   font-size: 2rem;
+  align-self: flex-start;
 }
 
 .about-main {
@@ -247,7 +259,7 @@ footer {
 }
 
 .about-img {
-  width: 100%;
+  max-width: 100%;
   max-height: 500px;
   object-fit: cover;
   position: center;
@@ -266,9 +278,10 @@ figcaption {
 
 @media (min-width: 850px) {
   .container-flex-about {
+    max-width: 80em;
     flex-direction: row;
     justify-content: space-between;
-    gap: 2em;
+    margin: 0 auto;
   }
 
   .container-flex-about-odd {
@@ -283,12 +296,6 @@ figcaption {
     flex: 0 0 50%;
   }
 
-  .about-img {
-    height: 100%;
-    max-height: 500px;
-    object-fit: cover;
-  }
-
   .about-col-main {
     text-align: left;
   }
@@ -300,5 +307,7 @@ figcaption {
 
   .about-main {
     max-width: 600px;
+    font-size: 1.05rem;
+    font-weight: 300;
   }
 }
