@@ -41,7 +41,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3em 1em;
+  margin: 9em 1em 3em 1em;
   height: 100vh;
 }
 
@@ -119,8 +119,15 @@ h3 {
 }
 
 /* 
-* Navbar and Footer 
+* Header and Footer 
 */
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
 
 nav,
 footer {
@@ -228,6 +235,7 @@ footer {
 
 .container-about {
   font-family: "Hind Vadodara", sans-serif;
+  margin-top: 4em;
 }
 
 .about-banner-even {
